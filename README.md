@@ -6,12 +6,12 @@ This repository contains the implementation of a Random Forest machine learning 
 ---
 
 ## *Table of Contents*
--Dataset
--Installation
--Usage
--Model Training
--Performance Evaluation
--Influence Analysis
--Shapley Values
--License
+- Dataset
+- Installation
+- Usage
+- Model Training
+- Performance Evaluation
+- Influence Analysis
+- Shapley Values
+- License
 
