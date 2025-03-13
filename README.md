@@ -5,15 +5,6 @@ This repository contains the implementation of a Random Forest machine learning 
 
 ---
 
-## **Table of Contents**
-- Dataset
-- Installation
-- Usage
-- Model Training
-- Performance Evaluation
-- Influence Analysis
-- Shapley Values
-
 ## **Dataset**
 The dataset consists of 3810 instances with 8 morphological features extracted from images of rice grains. The classification task involves predicting the rice type (Cammeo or Osmancik) based on these features:
 1. Area
@@ -24,4 +15,36 @@ The dataset consists of 3810 instances with 8 morphological features extracted f
 6. Convex_Area
 7. Extent
 8. Class (Target Variable)
+
+## **Technologies Used** - --------------------
+- **Programming Language**: Python
+- **Libraries**:
+  - `pyodbc` – Database connection
+  - `string` – String manipulation
+  - `secrets` – Secure key generation
+  - `datetime` – Time-based operations
+
+
+## **Setup**
+### **1. Dependencies**
+Ensure Python is installed along with the required libraries. Install missing packages using:
+```
+pip install {Package}
+```
+
+### **2. Running the Code**
+Run the code by entering this into terminal:
+```
+python model.py
+```
+
+## **Model Training**
+- The dataset is loaded using fetch_ucirepo(id=545)
+- Preprocessing steps include:
+  - Label encoding of the target variable
+  - Splitting the dataset into 80% training and 20% testing
+- The model was trained using:
+  - K-Nearest Neighbors (KNN) with n=5
+  - Random Forest Classifier (n_estimators=100, random_state=42, n_jobs=-1)
+The best-performing model was Random Forest, achieving 92% F1 Score
 
