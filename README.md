@@ -4,14 +4,15 @@
 This repository contains the implementation of a Random Forest machine learning model for classifying rice grains. Additionally, an influence analysis is conducted by systematically removing data points to assess their impact on model performance. The dataset is sourced from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/545/rice+cammeo+and+osmancik)
 
 ---
-## **Technologies Used** - --------------------
+## **Technologies Used** 
 - **Programming Language**: Python
 - **Libraries**:
-  - `sklearn` – Model connection
-  - `string` – String manipulation
-  - `secrets` – Secure key generation
-  - `datetime` – Time-based operations
- 
+  - `matplotlib` – Data visualization
+  - `seaborn` – Statistical data visualization
+  - `pandas` – Data manipulation and analysis
+  - `numpy` – Numerical computations
+  - `sklearn` – Machine learning models and evaluation metrics
+  - `ucimlrepo` – Fetching datasets from the UCI Machine Learning Repository
 
 ---
 ## **Dataset**
@@ -58,9 +59,8 @@ The best-performing model was Random Forest, achieving 92% F1 Score
 - Implemented Truncated Monte Carlo Shapley Values to estimate feature importance efficiently.
 - The computation stops early if additional points do not significantly alter the model's performance (tolerance = 0.001).
 
-
-
-## **Setup**
+---
+# Setup
 ### 1. Dependencies
 Ensure Python is installed along with the required libraries. Install missing packages using:
 ```
