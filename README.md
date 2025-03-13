@@ -40,13 +40,23 @@ The best-performing model was Random Forest, achieving 92% F1 Score
   - F1 Score (preferred due to class imbalance)
   - Confusion Matrix
   - Precision-Recall Curve
-- The results indicate strong classification performance with minimal overfitting.
+- The results indicate strong classification performance with minimal overfitting
 
 ---
-## Influence Analysis
+# Influence Analysis
 
+## **Leave-One-Out (LOO) Influence**
+- The effect of removing single data points was analyzed to measure their impact on model performance
+- Points with high negative influence suggest potential outliers or mislabeled data
+- My approach to influence analysis was inspired by concepts from [Hammoudeh & Lowd (2024)](https://arxiv.org/abs/2212.04612), which provides a comprehensive survey on training data influence estimation
 
+## **Group-Level Influence**
+- Subsets of the dataset were analyzed to understand how different sample sizes impact the model's F1 Score.
+- Sample sizes ranged from 10% to 100%.
 
+## **Shapley Values**
+- Implemented Truncated Monte Carlo Shapley Values to estimate feature importance efficiently.
+- The computation stops early if additional points do not significantly alter the model's performance (tolerance = 0.001).
 
 
 
