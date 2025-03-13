@@ -19,20 +19,20 @@ The dataset consists of 3810 instances with 8 morphological features extracted f
 ## **Technologies Used** - --------------------
 - **Programming Language**: Python
 - **Libraries**:
-  - `pyodbc` – Database connection
+  - `sklearn` – Model connection
   - `string` – String manipulation
   - `secrets` – Secure key generation
   - `datetime` – Time-based operations
 
 
 ## **Setup**
-### **1. Dependencies**
+### 1. Dependencies
 Ensure Python is installed along with the required libraries. Install missing packages using:
 ```
 pip install {Package}
 ```
 
-### **2. Running the Code**
+### 2. Running the Code
 Run the code by entering this into terminal:
 ```
 python model.py
@@ -47,4 +47,11 @@ python model.py
   - K-Nearest Neighbors (KNN) with n=5
   - Random Forest Classifier (n_estimators=100, random_state=42, n_jobs=-1)
 The best-performing model was Random Forest, achieving 92% F1 Score
+
+## **Performance Evaluation**
+- The evaluation metrics include:
+  - F1 Score (preferred due to class imbalance)
+  - Confusion Matrix
+  - Precision-Recall Curve
+- The results indicate strong classification performance with minimal overfitting.
 
